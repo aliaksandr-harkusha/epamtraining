@@ -11,6 +11,10 @@ public class NecklaceUtil {
 
     private NecklaceUtil(){}
     
+    //а почему методы static?
+    //static методы в основном используются для работы со статическими полями
+    //либо для каких-то математических операций - как у тебя в PriceUtils
+    //в остальных случаях - это отсылка к функциональному программированию
     public static double summaryWeight(Necklace necklace){
     //хорошо сделано - молодец, но на java8
     //целевая java нашего курса java6-7
