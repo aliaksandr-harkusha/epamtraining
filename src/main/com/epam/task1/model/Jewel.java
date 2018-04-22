@@ -52,6 +52,8 @@ public class Jewel {
         this.refractiveIndex = refractiveIndex;
     }
 
+    //вместо слова Jewel лучше использовать что-то типа getClass().getName()
+    //так при изменени имени класса - не придется менять метод toString()
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Jewel{");
