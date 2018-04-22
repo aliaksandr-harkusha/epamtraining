@@ -9,6 +9,8 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+//переименуй класс в какой-нибудь Controller, Starter или Runner 
+//и перенеси в такой же пакет, только с маленькой буквы
 public class Main {
 
     public static void main(String[] args) {
@@ -23,7 +25,8 @@ public class Main {
 
         while (!(inputLine = scanner.nextLine()).equals("exit")){
             String trimmedIn = inputLine.trim();
-
+            
+            //преобразуй лучше в switch/case
             if ("help".equals(trimmedIn)){
                 showHelp();
                 separatorLine();
@@ -58,6 +61,9 @@ public class Main {
         }
     }
 
+    //Scanner - лучше в методы не передавать
+    //т.е. все параметры от пользователя ты считываешь в main методе
+    //а в метод передаешь уже значения
     private static void add(Scanner scanner, Necklace necklace) {
         try {
             System.out.println("Type name and press enter:");
