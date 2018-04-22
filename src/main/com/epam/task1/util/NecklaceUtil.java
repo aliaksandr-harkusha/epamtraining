@@ -10,8 +10,11 @@ import java.util.stream.Collectors;
 public class NecklaceUtil {
 
     private NecklaceUtil(){}
-
+    
     public static double summaryWeight(Necklace necklace){
+    //хорошо сделано - молодец, но на java8
+    //целевая java нашего курса java6-7
+    //поэтому прошу тебя переписать через цикл for и т.д.
         return necklace.getJewels().stream()
                 .mapToDouble(Jewel::getWeight)
                 .sum();
